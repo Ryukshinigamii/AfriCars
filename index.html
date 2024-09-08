@@ -7,6 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
 <body>
@@ -14,19 +22,20 @@
 <div class="navbar">
 
     <!-- Hamburger Menu Icon -->
-    <div class="hamburger-menu" onclick="toggleMenu()">
+    <div class="hamburger-menu">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
         <span>Menu</span>
     </div>
+    <!-- Hamburger Menu Icon end -->
 
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="menu">
             <div class="menu-item"><a href="#" class="menu-link" data-content="Home">Home</a></div>
             <div class="menu-item"><a href="#" class="menu-link" data-content="About">About</a></div>
-            <div class="menu-item"><a href="#" class="menu-link" data-content="Services">Services</a></div>
+            <div class="menu-item"><a href="#" class="menu-link" data-content="Dashboard">Dashboard</a></div>
             <div class="menu-item"><a href="#" class="menu-link" data-content="Contact">Contact</a></div>
         </div>
         <div class="social-media">
@@ -39,7 +48,7 @@
 
     <!--Banner-->
     <div class="logo">
-        <img src="/home/sheldon/Desktop/Afri Cars/logo bg.png" class="container-fluid" alt="logo"> 
+        <img src="/home/sheldon/Desktop/Afri Cars/images/logo bg.png" class="container-fluid" alt="logo"> 
     </div>
     <!--Banner end-->
 
@@ -63,11 +72,9 @@
         <span><i class="lni lni-search-alt search-icon"></i></span>
     </div>
     </div>
-
+    <!--Search bar end -->
+    <hr>
 </div>
-
-<hr>
-
 <div class="places">
     <a href="#">Gauteng</a>
     <a href="#">Free State</a>
@@ -79,10 +86,176 @@
     <a href="#">Eastern Cape</a>
     <a href="#">Northern Cape</a>
 </div>
+<hr>
+<div class="carousel-3d">
+    
+    <!-- First Card -->
+    <div class="carousel-card card1">
+      <div class="carousel-inner" id="carousel1">
+        <div class="carousel-images">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/audi1.jpeg" alt="Image 1">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/audi2.jpeg" alt="Image 2">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/audi3.jpeg" alt="">
+        </div>
+        <div class="inner-control-prev" onclick="moveInnerLeft(1)">&#8249;</div>
+        <div class="inner-control-next" onclick="moveInnerRight(1)">&#8250;</div>
+        <div class="pagination" id="pagination1"></div>
+      </div>
+    </div>
 
+    <!-- Second Card -->
+    <div class="carousel-card card2">
+      <div class="carousel-inner" id="carousel2">
+        <div class="carousel-images">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/bmw1.avif" alt="Image 1">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/bmw2.avif" alt="Image 2">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/bmw3.avif" alt="">
+        </div>
+        <div class="inner-control-prev" onclick="moveInnerLeft(2)">&#8249;</div>
+        <div class="inner-control-next" onclick="moveInnerRight(2)">&#8250;</div>
+        <div class="pagination" id="pagination2"></div>
+      </div>
+    </div>
 
+    <!-- Third Card -->
+    <div class="carousel-card card3">
+      <div class="carousel-inner" id="carousel3">
+        <div class="carousel-images">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/merc1.jpeg" alt="Image 1">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/merc2.jpeg" alt="Image 2">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/merc3.jpeg" alt="">
+        </div>
+        <div class="inner-control-prev" onclick="moveInnerLeft(3)">&#8249;</div>
+        <div class="inner-control-next" onclick="moveInnerRight(3)">&#8250;</div>
+        <div class="pagination" id="pagination3"></div>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Fourth Card -->
+    <div class="carousel-card card4">
+      <div class="carousel-inner" id="carousel4">
+        <div class="carousel-images">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/porsche1.jpeg" alt="Image 1">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/porsche2.jpeg" alt="Image 2">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/porsche3.jpeg" alt="">
+        </div>
+        <div class="inner-control-prev" onclick="moveInnerLeft(4)">&#8249;</div>
+        <div class="inner-control-next" onclick="moveInnerRight(4)">&#8250;</div>
+        <div class="pagination" id="pagination4"></div>
+      </div>
+    </div>
+
+    <!-- Fifth Card -->
+    <div class="carousel-card card5">
+      <div class="carousel-inner" id="carousel5">
+        <div class="carousel-images">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/lexus1.jpeg" alt="Image 1">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/lexus2.jpeg" alt="Image 2">
+          <img src="/home/sheldon/Desktop/Afri Cars/images/lexus3.jpeg" alt="">
+        </div>
+        <div class="inner-control-prev" onclick="moveInnerLeft(5)">&#8249;</div>
+        <div class="inner-control-next" onclick="moveInnerRight(5)">&#8250;</div>
+        <div class="pagination" id="pagination5"></div>
+      </div>
+    </div>
+    <!-- Main carousel navigation arrows -->
+    <div class="carousel-control-prev" onclick="moveLeft()">&#8249;</div>
+    <div class="carousel-control-next" onclick="moveRight()">&#8250;</div>
+  </div>
+
+      <!-- Dynamic Text for the Carousel -->
+      <div class="carousel-text" id="dynamicText">
+        <div class="car-model">2023 Mercedes E-Class</div>
+        <div class="car-location">Sandton, Johannesburg</div>
+        <div class="car-price-container">
+            <div class="car-price">R3 000 000</div>
+            <div class= "car-price-monthly">R23 000 p/m</div>
+        </div>
+        <div class="car-type">New Car | Automatic</div>
+        <div class="car-price-container">
+          <div class="dealership">Mercedes-Benz Pretoria</div>
+          <div class="dealership-verification">Verified dealer</div>
+        </div>
+    </div>
+      <!-- Add the menu section to show selected car's services and dealer info -->
+  <div id="menu">
+    <span class="menu-bar"></span>
+    <div class="menu-car">
+      <div class="menu-car-model">2023 Mercedes E-Class</div>
+      <div class="menu-car-price">R3 000 000</div>
+    </div>
+
+    <div class="menu-car2">
+      <div class="menu-car2-place">Sandton, Johannesburg</div>
+      <div class="menu-car2-price">R23 000 p/m</div>
+    </div>
+    <div class="menu-car3">
+      <div class="menu-car3-spec">New Car | Automatic | Petrol</div>
+      <div class="menu-car3-dealer">Mercedes-Benz Pretoria</div>
+    </div>
+
+        <!--Search bar-->
+        <div class="bar-spec">
+          <div class="location">
+              <p class="bar-spec-top">Speed</p>
+              <p class="bar-spec-bottom">100 Km/h</p>
+          </div>
+          <div class="check-in">
+                <p class="bar-spec-top">0-100 km/h</p>
+                <p class="bar-spec-bottom">3.8 Seconds</p>
+
+          </div>
+          <div class="check-out">
+                <p class="bar-spec-top">Fuel Consumption</p>
+                <p class="bar-spec-bottom">12.0 L/100 Km</p>
+          </div>
+          <div class="guests">
+                <p class="bar-spec-top">Year</p>
+                <p class="bar-spec-bottom">2023</p>
+          </div>
+          </div>
+          <!--Search bar end -->
+          <div class="center-services">
+            <p class="dealership-services">Dealership Services</p>
+            <ul id="menu-services">
+              <li><span class="icon">✔</span> Free Delivery</li>
+              <li><span class="icon">✔</span> Financing</li>
+              <li><span class="icon">✔</span> Stage 2 Tune</li>
+              <li><span class="icon">✔</span> Minor Repairs</li>
+              <li><span class="icon">✔</span> Full Tank</li>
+              <li><span class="icon">✔</span> Diagnostic</li>
+            </ul>
+          </div>
+
+            <!-- Dealer Info -->
+          <div id="dealer-info">
+            <img src="/home/sheldon/Desktop/Afri Cars/images/gert.webp" alt="Dealer Image">
+            <div class="dealer-details">
+              <div class="dealer-name">Gert Kortnieman</div>
+              <div class="container">
+                <div class="dealer-stats">64 cars sold 200 posts</div>
+                <div class="dealer-verified">Verified dealer</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="dealer-buttons">
+            <button class="call-button" type="submit">Call</button>
+            <button class="message-button" type="submit">Message</button>
+          </div>
+        </div>
+
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
